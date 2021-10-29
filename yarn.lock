@@ -4611,6 +4611,7 @@ resolve@^2.0.0-next.3:
     prettier: ^2.4.1
     react: ^17.0.2
     react-dom: ^17.0.2
+    styled-jsx: ^4.0.1
     tailwindcss: ^2.2.4
   languageName: unknown
   linkType: soft
@@ -5044,7 +5045,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"styled-jsx@npm:4.0.1":
+"styled-jsx@npm:4.0.1, styled-jsx@npm:^4.0.1":
   version: 4.0.1
   resolution: "styled-jsx@npm:4.0.1"
   dependencies:

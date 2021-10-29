@@ -1,8 +1,8 @@
-const Card = ({ key, projectTitle }) => {
+const Card = ({ projectTitle, projectDescription }) => {
 	return (
 		<div>
-			<div>{projectTitle}</div>
-			<div>{key}</div>
+			<h3>{projectTitle}</h3>
+			<p>{projectDescription}</p>
 		</div>
 	);
 };

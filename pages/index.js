@@ -6,9 +6,6 @@ import { useState } from 'react';
 
 export default function Home() {
 	const [cardState, setCardState] = useState(null);
-	const [key, setKey] = useState(null);
-	const [projectTitle, setProjectTitle] = useState(null);
-	//console.log(useState);
 
 	useEffect(() => {
 		(async function () {
@@ -154,14 +151,17 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-
+				<h2 className="py-6 mx-auto">Projects</h2>
 				<div
 					id="projects"
-					className="flex flex-col items-center justify-center w-screen flex-1 px-20 text-center bg-gray-200"
+					className="grid grid-cols-3 gap-4 py-4 items-center justify-center w-screen flex-1 px-20 text-center bg-gray-200"
 				>
-					<a className="py-6">Projects</a>
 					{cardState?.map((item) => (
-						<Card key={item.fields.title} projectTitle={item.fields.title} />
+						<Card
+							key={item.fields.title}
+							projectTitle={item.fields.title}
+							projectDescription={item.fields.description}
+						/>
 					))}
 				</div>
 			</main>
@@ -186,6 +186,11 @@ export default function Home() {
 					/>
 				</a>
 			</footer>
+			<style global jsx>{`
+				html {
+					scroll-behavior: smooth;
+				}
+			`}</style>
 		</div>
 	);
 }

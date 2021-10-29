@@ -1,9 +1,9 @@
 {
   "folders": [
-		{
-			"path": "."
-		}
-  ],
+	{
+		"path": "."
+	}
+],
 	"settings": {
 		"editor.insertSpaces": false,
 		"editor.tabSize": 2
