@@ -17,7 +17,7 @@ export default function Home() {
 	}, []);
 	console.log(cardState);
 	return (
-		<div className="flex flex-col items-center mx-auto min-h-screen">
+		<div className="flex flex-col items-center w-screen min-h-screen">
 			<Head>
 				<title>Thomas Pofahl</title>
 				<link rel="icon" href="/favicon.ico" />
@@ -25,7 +25,7 @@ export default function Home() {
 
 			<main
 				id="home"
-				className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center sm:text-sm"
+				className="flex flex-col items-center justify-center w-screen flex-1 px-20 text-center sm:text-sm"
 			>
 				<div className="flex flex-col items-center justify-center w-screen min-h-screen flex-1 px-20 text-center bg-gray-800 text-white">
 					<div>
@@ -38,9 +38,9 @@ export default function Home() {
 						<a
 							as="button"
 							href="#about"
-							className="m-5 p-3 border-2 rounded-lg border-white hover:bg-white hover:text-black duration-500"
+							className="m-2 p-3 border-2 rounded-lg border-white hover:bg-white hover:text-black duration-500"
 						>
-							To work
+							about
 						</a>
 					</div>
 				</div>
@@ -153,7 +153,7 @@ export default function Home() {
 				<div className="flex bg-gray-800 text-white w-screen border-b-4 md:border-b-8 border-blue-500">
 					<h2 className="py-6 mx-auto text-5xl">Projects</h2>
 				</div>
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 grid-center break-words gap-4 py-4 mx-center w-screen flex-1 px-20 text-center bg-light">
+				<div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 break-words justify-items-center gap-4 py-4 mx-center w-screen flex-1 text-center bg-light">
 					{cardState?.map((item, itemIdx) => (
 						<Card
 							key={item.fields.title}
