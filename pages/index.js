@@ -17,22 +17,22 @@ export default function Home() {
 	}, []);
 	console.log(cardState);
 	return (
-		<div className="flex flex-col items-center justify-center min-h-screen">
+		<div className="flex flex-col items-center mx-auto min-h-screen">
 			<Head>
 				<title>Thomas Pofahl</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-				<div
-					id="home"
-					className="flex flex-col items-center justify-center w-screen min-h-screen flex-1 px-20 text-center bg-gray-800 text-white"
-				>
+			<main
+				id="home"
+				className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center sm:text-sm"
+			>
+				<div className="flex flex-col items-center justify-center w-screen min-h-screen flex-1 px-20 text-center bg-gray-800 text-white">
 					<div>
-						<h1 className="flex flex-col items-center justify-center text-5xl">
+						<h1 className="flex flex-col items-center justify-center text-2xl md:text-5xl">
 							Hello, my name is Thomas Pofahl.
 						</h1>
-						<h1 className="flex flex-col items-center justify-center mb-5 text-3xl">
+						<h1 className="flex flex-col items-center justify-center mb-5 text-2xl md:text-5xl mt-2">
 							I am a Front End Developer.
 						</h1>
 						<a
@@ -45,15 +45,15 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="sticky top-0 z-30 bg-gray-900 w-screen">
+				<div className="sticky top-0 z-30 bg-gray-900 w-screen border-b-4 md:border-b-8 border-blue-500">
 					<div className="md:flex md:items-center md:justify-between mb-2 mt-2">
-						<div className="flex-1 min-w-0 ml-3">
-							<h2 className="text-2xl font-bold leading-7 text-white sm:text-3xl sm:truncate">
+						<div className="md:ml-8">
+							<h2 className="text-2xl font-bold text-white sm:text-3xl sm:truncate">
 								Thomas Pofahl
 							</h2>
 						</div>
-						<div className="mt-4 flex md:mt-0 md:ml-4 md:mr-4">
-							<ul className="flex">
+						<div className="mt-4 md:mt-0 md:ml-4 md:mr-4">
+							<ul className="flex justify-between px-3 md:text-lg">
 								<li className="ml-4 mr-4 text-white hover:text-blue-500">
 									<a href="#home">home</a>
 								</li>
@@ -73,23 +73,21 @@ export default function Home() {
 
 				<div
 					id="about"
-					className="flex flex-col items-center justify-center w-screen flex-1 px-20 text-center"
+					className="flex flex-col items-center pt-20 justify-center w-screen flex-1 px-20 text-center"
 				>
-					<div className="bg-white w-screen">
+					<div className="bg-light w-screen">
 						<div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
 							<div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
 								<div>
 									<h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-										Used by the world&apos;s most average companies
+										Modern technology to create professional webpages
 									</h2>
 									<p className="mt-3 max-w-3xl text-lg text-gray-500">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-										egestas tempus tellus etiam sed. Quam a scelerisque amet
-										ullamcorper eu enim et fermentum, augue.
+										Tools that I use to create content.
 									</p>
 								</div>
 								<div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-									<div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+									<div className="col-span-1 flex justify-center py-8 px-8 bg-light">
 										<Image
 											className="max-h-12"
 											src="/html5.svg"
@@ -99,8 +97,7 @@ export default function Home() {
 										/>
 									</div>
 
-									<div className="grid grid-cols-1 col-span-1 flex-col justify-center py-8 px-8 bg-gray-50">
-										<span>CSS3</span>
+									<div className="grid grid-cols-1 col-span-1 flex-col justify-center py-8 px-8 bg-light">
 										<Image
 											className="max-h-12"
 											src="/CSS3.svg"
@@ -110,7 +107,7 @@ export default function Home() {
 										/>
 									</div>
 
-									<div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+									<div className="col-span-1 flex justify-center py-8 px-8 bg-light">
 										<Image
 											className="max-h-12"
 											src="/javascript.svg"
@@ -119,7 +116,7 @@ export default function Home() {
 											width={200}
 										/>
 									</div>
-									<div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+									<div className="col-span-1 flex justify-center py-8 px-8 bg-light">
 										<Image
 											className="max-h-12"
 											src="/react.svg"
@@ -128,7 +125,7 @@ export default function Home() {
 											width={200}
 										/>
 									</div>
-									<div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+									<div className="col-span-1 flex justify-center py-8 px-8 bg-light">
 										<Image
 											className="max-h-12"
 											src="/nextjs.svg"
@@ -137,7 +134,7 @@ export default function Home() {
 											width={200}
 										/>
 									</div>
-									<div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+									<div className="col-span-1 flex justify-center py-8 px-8 bg-light">
 										<Image
 											className="max-h-12"
 											src="/vercel.svg"
@@ -151,11 +148,12 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<h2 className="py-6 mx-auto">Projects</h2>
-				<div
-					id="projects"
-					className="grid md:grid-cols-2 lg:grid-cols-3 break-words gap-4 py-4 items-center justify-center w-screen flex-1 px-20 text-center bg-gray-200"
-				>
+
+				<div id="projects" className="py-10 md:py-6"></div>
+				<div className="flex bg-gray-800 text-white w-screen border-b-4 md:border-b-8 border-blue-500">
+					<h2 className="py-6 mx-auto text-5xl">Projects</h2>
+				</div>
+				<div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 grid-center break-words gap-4 py-4 mx-center w-screen flex-1 px-20 text-center bg-light">
 					{cardState?.map((item, itemIdx) => (
 						<Card
 							key={item.fields.title}
