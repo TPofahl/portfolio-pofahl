@@ -14,8 +14,8 @@ export default function Home() {
 				.then((data) => setCardState(data))
 				.catch((error) => console.log(error));
 		})();
-	});
-
+	}, []);
+	console.log(cardState);
 	return (
 		<div className="flex flex-col items-center justify-center min-h-screen">
 			<Head>
@@ -154,13 +154,16 @@ export default function Home() {
 				<h2 className="py-6 mx-auto">Projects</h2>
 				<div
 					id="projects"
-					className="grid grid-cols-3 gap-4 py-4 items-center justify-center w-screen flex-1 px-20 text-center bg-gray-200"
+					className="grid md:grid-cols-2 lg:grid-cols-3 break-words gap-4 py-4 items-center justify-center w-screen flex-1 px-20 text-center bg-gray-200"
 				>
-					{cardState?.map((item) => (
+					{cardState?.map((item, itemIdx) => (
 						<Card
 							key={item.fields.title}
 							projectTitle={item.fields.title}
 							projectDescription={item.fields.description}
+							projectRepoLink={item.fields.repoLink}
+							projectSiteLink={item.fields.siteLink}
+							projectImage={item.fields.cardPic?.fields}
 						/>
 					))}
 				</div>
