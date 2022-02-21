@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Card from 'components/card';
+import Footer from 'components/footer';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
@@ -15,7 +16,6 @@ export default function Home() {
 				.catch((error) => console.log(error));
 		})();
 	}, []);
-	console.log(cardState);
 	return (
 		<div className="flex flex-col items-center w-screen min-h-screen">
 			<Head>
@@ -33,7 +33,7 @@ export default function Home() {
 							Hello, my name is Thomas Pofahl.
 						</h1>
 						<h1 className="flex flex-col items-center justify-center mb-5 text-2xl md:text-5xl mt-2">
-							I am a Front End Developer.
+							I am a Web Developer.
 						</h1>
 						<a
 							as="button"
@@ -106,7 +106,6 @@ export default function Home() {
 											width={120}
 										/>
 									</div>
-
 									<div className="col-span-1 flex justify-center py-8 px-8 bg-light">
 										<Image
 											className="max-h-12"
@@ -166,27 +165,7 @@ export default function Home() {
 					))}
 				</div>
 			</main>
-
-			<footer
-				id="contact"
-				className="flex items-center justify-center w-full h-60 border-t bg-gray-900"
-			>
-				<a
-					className="flex items-center justify-center"
-					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Powered by{' '}
-					<Image
-						src="/vercel.svg"
-						alt="Vercel Logo"
-						className="h-4 ml-2"
-						height={100}
-						width={150}
-					/>
-				</a>
-			</footer>
+			<Footer />
 			<style global jsx>{`
 				html {
 					scroll-behavior: smooth;
