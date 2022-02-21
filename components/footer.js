@@ -15,8 +15,8 @@ const Footer = () => {
 					<Image
 						src="/icon-linkedin.svg"
 						alt="Linkedin logo"
-						width={75}
-						height={75}
+						width={60}
+						height={60}
 					/>
 				</a>
 
@@ -25,7 +25,7 @@ const Footer = () => {
 					target="_blank"
 					rel="noreferrer noopener"
 				>
-					<Image src="/icon-github.svg" alt="GitHub logo" width={75} height={75} />
+					<Image src="/icon-github.svg" alt="GitHub logo" width={60} height={60} />
 				</a>
 
 				<a
@@ -33,7 +33,7 @@ const Footer = () => {
 					target="_blank"
 					rel="noreferrer noopener"
 				>
-					<Image src="/icon-email.svg" alt="E-mail logo" width={75} height={75} />
+					<Image src="/icon-email.svg" alt="E-mail logo" width={60} height={60} />
 				</a>
 			</div>
 		</footer>

@@ -22,23 +22,33 @@ const Card = ({
 						{projectDescription}
 					</div>
 					<div className="flex-row">
+						{projectRepoLink ? (
+							<a
+								as="button"
+								className="flex-end pt-5 pb-4 px-6 md:px-7  bg-blue-600 rounded-3xl ml-2"
+								href={projectRepoLink}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Image src="/icon-code.svg" alt="code logo" width={20} height={20} />
+							</a>
+						) : (
+							<a
+								as="iamge"
+								className="flex-end pt-5 pb-4 px-6 md:px-7  bg-gray-500 rounded-3xl ml-2"
+							>
+								<Image src="/icon-code.svg" alt="code logo" width={20} height={20} />
+							</a>
+						)}
+
 						<a
 							as="button"
-							className="px-4 py-4 sm:px-6 bg-gray-800 text-white rounded-3xl mr-2"
-							href={projectRepoLink}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							Repo
-						</a>
-						<a
-							as="button"
-							className="flex-end py-4 px-6 md:px-7  bg-gray-800 text-white rounded-3xl ml-2"
+							className="flex-end pt-5 pb-4 px-6 md:px-7  bg-green-400 rounded-3xl ml-2"
 							href={projectSiteLink}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							Site
+							<Image src="/icon-play.svg" alt="play logo" width={20} height={20} />
 						</a>
 					</div>
 				</>
