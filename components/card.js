@@ -48,7 +48,7 @@ const Card = ({
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<Image src="/icon-play.svg" alt="play logo" width={20} height={20} />
+							<Image src="/icon-play.svg" alt="play logo" width={25} height={25} />
 						</a>
 					</div>
 				</>
