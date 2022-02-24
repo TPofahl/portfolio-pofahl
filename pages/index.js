@@ -79,11 +79,30 @@ export default function Home() {
 						<div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
 							<div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
 								<div>
-									<h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-										Modern technology to create professional webpages
-									</h2>
+									<h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">About Me</h2>
 									<p className="mt-3 max-w-3xl text-lg text-gray-500">
-										Tools that I use to create content.
+										I am currently a student at Dakota State University, in Madison
+										SD. My graduation date is at the end of this year. My goal is to
+										start my full-time career as a Web Developer prior to graduation.
+									</p>
+
+									<p className="mt-3 max-w-3xl text-lg text-gray-500">
+										In my free time, I apply my development skills in creative ways
+										to better understand my field. In the projects listed below, I
+										tested my knowlege of JavaScript, and made a Battleships game.
+										The game is made with Phaser 3, a JavaScript 2-D game framework.
+										It was a really fun project to work on, and will be providing
+										online support for the game in the future.
+									</p>
+									<p className="mt-3 max-w-3xl text-lg text-gray-500">
+										Everything I have made (and worked on) is hosted with Vercel, and
+										is a React app. I was given the opportunity to work with a small
+										group on an e-commerce website. Having the oppotrunity to be paid
+										to practice what I am learning in school is a very cool
+										experience that I am thankful for.
+									</p>
+									<p className="mt-3 max-w-3xl text-lg text-gray-500">
+										I am looking forward to what the future holds.
 									</p>
 								</div>
 								<div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
