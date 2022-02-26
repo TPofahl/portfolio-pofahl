@@ -107,12 +107,12 @@ export default function Home() {
 										I am looking forward to what the future holds.
 									</p>
 								</div>
-								<div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+								<div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-3">
 									<div className="col-span-1 flex justify-center py-8 px-8 bg-light">
 										<Image
 											className="max-h-12"
 											src="/html5.svg"
-											alt="HTML5"
+											alt="HyperText Markup Language Scalable Vector Graphic"
 											height={200}
 											width={200}
 										/>
@@ -122,7 +122,7 @@ export default function Home() {
 										<Image
 											className="max-h-12"
 											src="/CSS3.svg"
-											alt="CSS3"
+											alt="Cascading Style Sheets Scalable Vector Graphic"
 											height={120}
 											width={120}
 										/>
@@ -131,7 +131,7 @@ export default function Home() {
 										<Image
 											className="max-h-12"
 											src="/javascript.svg"
-											alt="JavaScript"
+											alt="JavaScript Scalable Vector Graphic"
 											height={200}
 											width={200}
 										/>
@@ -140,7 +140,7 @@ export default function Home() {
 										<Image
 											className="max-h-12"
 											src="/react.svg"
-											alt="React"
+											alt="React Scalable Vector Graphic"
 											height={200}
 											width={200}
 										/>
@@ -149,7 +149,7 @@ export default function Home() {
 										<Image
 											className="max-h-12"
 											src="/nextjs.svg"
-											alt="NextJS"
+											alt="NextJS Scalable Vector Graphic"
 											height={200}
 											width={200}
 										/>
@@ -158,7 +158,34 @@ export default function Home() {
 										<Image
 											className="max-h-12"
 											src="/vercel.svg"
-											alt="Vercel"
+											alt="Vercel Scalable Vector Graphic"
+											height={200}
+											width={200}
+										/>
+									</div>
+									<div className="col-span-1 flex justify-center py-8 px-8 bg-light">
+										<Image
+											className="max-h-12"
+											src="/contentful.svg"
+											alt="Contentful Scalable Vector Graphic"
+											height={200}
+											width={200}
+										/>
+									</div>
+									<div className="col-span-1 flex justify-center py-8 px-8 bg-light">
+										<Image
+											className="max-h-12"
+											src="/yarn.svg"
+											alt="Yarn Scalable Vector Graphic"
+											height={200}
+											width={200}
+										/>
+									</div>
+									<div className="col-span-1 flex justify-center py-12 px-8 bg-light">
+										<Image
+											className="max-h-12"
+											src="/npm.svg"
+											alt="NPM Scalable Vector Graphic"
 											height={200}
 											width={200}
 										/>
