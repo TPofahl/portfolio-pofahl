@@ -91,7 +91,7 @@ export default function Home() {
 									<p className="mt-3 max-w-3xl text-lg text-gray-500">
 										In my free time, I apply my development skills in creative ways
 										to better understand my field. In the projects listed below, I
-										tested my knowlege of JavaScript, and made a Battleships game.
+										tested my knowledge of JavaScript and made a Battleships game.
 										The game is made with Phaser 3, a JavaScript 2-D game framework.
 										It was a really fun project to work on, and will be providing
 										online support for the game in the future.
@@ -99,8 +99,8 @@ export default function Home() {
 									<p className="mt-3 max-w-3xl text-lg text-gray-500">
 										Everything I have made (and worked on) is hosted with Vercel, and
 										is a React app. I was given the opportunity to work with a small
-										group on an e-commerce website. Having the oppotrunity to be paid
-										to practice what I am learning in school is a very cool
+										group on an e-commerce website. Having the opportunity to be paid
+										to practice what I am learning in school is a very rewarding
 										experience that I am thankful for.
 									</p>
 									<p className="mt-3 max-w-3xl text-lg text-gray-500">

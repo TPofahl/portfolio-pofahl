@@ -1,6 +1,6 @@
 # Portfolio
 
-This portfolio was made to show off my skills in Web Development. The site has links to multiple projects, and is managed using Contentful. Contentful is a headless CMS(content management system), and is being used to manage the portolio projects media. This is a React app using NextJs as the production framework. The portfolio is styled with Tailwind-CSS.
+This portfolio was made to show off my skills in Web Development. The site has links to multiple projects and is managed using Contentful. Contentful is a headless CMS (content management system), and is being used to manage the portfolio projects media. This is a React app using Nextjs as the production framework. The portfolio is styled with Tailwind-CSS.
 
 <br/>
 
