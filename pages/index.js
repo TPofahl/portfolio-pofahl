@@ -33,7 +33,7 @@ export default function Home() {
 							Hello, my name is Thomas Pofahl.
 						</h1>
 						<h1 className="flex flex-col items-center justify-center mb-5 text-2xl md:text-5xl mt-2">
-							I am a Web Developer.
+							I am a Software Developer.
 						</h1>
 						<a
 							as="button"
@@ -85,16 +85,18 @@ export default function Home() {
 									<p className="mt-3 max-w-3xl text-lg text-gray-500">
 										I am currently a student at Dakota State University, in Madison
 										SD. My graduation date is at the end of this year. My goal is to
-										start my full-time career as a Web Developer prior to graduation.
+										start my full-time career as a Software Developer prior to
+										graduation.
 									</p>
 
 									<p className="mt-3 max-w-3xl text-lg text-gray-500">
 										In my free time, I apply my development skills in creative ways
-										to better understand my field. In the projects listed below, I
-										tested my knowledge of JavaScript and made a Battleships game.
-										The game is made with Phaser 3, a JavaScript 2-D game framework.
-										It was a really fun project to work on, and will be providing
-										online support for the game in the future.
+										to better understand my field. In the projects listed
+										below(projects are interactive, with links to active page/Github
+										repository), I tested my knowledge of JavaScript and made a
+										Battleships game. The game is made with Phaser 3, a JavaScript
+										2-D game framework. It was a really fun project to work on, and
+										will be providing online support for the game in the future.
 									</p>
 									<p className="mt-3 max-w-3xl text-lg text-gray-500">
 										Everything I have made (and worked on) is hosted with Vercel, and
@@ -198,7 +200,7 @@ export default function Home() {
 
 				<div id="projects" className="py-10 md:py-6"></div>
 				<div className="flex bg-gray-800 text-white w-screen border-b-4 md:border-b-8 border-blue-500">
-					<h2 className="py-6 mx-auto text-5xl">Projects</h2>
+					<h2 className="py-6 mx-auto text-5xl">Projects (Interactive)</h2>
 				</div>
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 break-words justify-items-center gap-4 py-4 mx-center w-screen flex-1 text-center bg-light">
 					{cardState?.map((item, itemIdx) => (
